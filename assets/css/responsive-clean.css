@@ -1,0 +1,510 @@
+@media screen and (max-width:1580px) {
+.mobbg{background:#000 url(../images/world_at_night_europe-pnk.jpg) center bottom no-repeat!important;position: fixed;top: 0;left: 0;right: 0;bottom: 0;z-index:0;display: inline-block;width: 100%;height: 100%}
+nav li a{padding: 24px 15px;font-size: 16px;}
+nav li.subm a{padding-right: 35px}
+nav li.subm:after{top: 23px;right: 15px;}
+.home-list li{width: 16%;}
+ul.home-list{margin:10px 20px 50px;}
+.counter {padding: 10px 20% 30px;}
+ul.comingsoonc{margin: 10px 10px 50px;}
+.logosC .inner{width: 98%;}
+.media-logos li {width: 33.333%;}
+.vid-bg{height:100vh}
+.txt-hdr h1{font-size:58px;margin:10px 5%}
+.tv-txt{font-size: 30px}
+.txt-hdr a{font-size:50px;padding:5px 30px}
+.register span{width: 450px;}
+}
+@media screen and (max-width:1310px) {
+.inner{width: 100%;padding: 0 20px;}
+.txt-hdr h1{font-size: 60px;font-weight: 300;}
+.txt-hdr h2{font-size: 60px;font-weight: 300;}
+.ecover p{font-size: 24px;font-weight: 300;margin: 40px 20px 0;}
+.earn-money li{width: 44%;margin-bottom: 30px;}
+.pnk-ttl{font-size: 50px;font-weight: 300;}
+.home-list li{width: 30%;}
+.counter {padding: 10px 10% 30px;}
+.register h3{font-size: 40px}
+.earn-money ul{width: 90%;}
+.lang25C ul{margin:0 10%}
+.txt-hdr h1{font-size:45px;margin:10px 7%}
+.txt-hdr a{font-size:45px}
+
+
+.btm-webinar h3, .btm-webinar ul {width: 85%;}
+}
+@media screen and (max-width:1170px) {
+html, body{-webkit-overflow-scrolling: touch;}
+nav{position: absolute;top: 24px;left: 0;width: 100%;}
+.mob-bar{display: block}
+header.ml .mob-bar{margin-right: 70px;}
+header.ml .nav-lang{right: 20px;}
+nav ul#menu{display: none;width: 100%;text-align: center;margin-top: 45px;background: #702a54;}
+nav li a{padding: 12px 15px;}
+nav li.subm:after{top: 11px;}
+.btm-part h1, .btm-part h2, .btm-part h3{font-size: 60px;line-height: 60px;}
+.amb-ttl h2{font-size: 50px}
+.amb-ttl h2:before{width: 70px;left: -95px;}
+.amb-ttl h2:after{width: 70px;right: -95px;}
+.midtxt h3{font-size: 90px}
+.midtxt h4{font-size: 48px}
+.comingsoonc li h4{font-size: 14px}
+.bbq{font-size: 75px}
+.top-ttl{font-size: 34px;font-weight: 300;}
+ul.ecosys-logo{width: 100%;}
+.bloglst li{width: 27%;}
+.top-vidC{margin-top: 52px}
+.contact li{width: 29%;}
+.toptxt h3 {font-size: 26px;line-height: 36px;font-weight: 300;}
+.toptxt p{font-size: 20px;line-height: 30px;font-weight: 300;}
+.p-ebox{width: 23.5%;}
+.club-box {width: 29.5%;margin: 30px 5px;}
+.twtr-feed li span{height: 224px}
+.partner-logo img{margin: 0 30px 20px}
+
+.txt-hdr span{margin-top:30px}
+.deTtl {font-size: 45px;}
+.txt-hdr a {font-size: 32px;padding: 5px 24px;margin-top: 20px;}
+.txt-hdr h1 {font-size: 35px;margin: 0 10px;}
+.tv-txt{font-size: 24px;font-weight: 300;}
+.purpose ul {margin: 60px 0 0;}
+.vidtop ul{margin: 0 15px}
+.team-ebox p {margin: 20px 10px 10px;}
+.ebox-top{width: 100%;margin: 20px 0;}
+.ebox-top.m50 {margin: 50px 0;}
+.debox{width: 100%;}
+.p2p-ebox {width: 30%;}
+.p2p-ebox h5{font-size: 32px;}
+.p2p-ebox h6{font-size: 44px;}
+.p2p-ebox p{font-size: 24px;}
+.btm-info li, .dlbox-inv {width: 23%;margin: 10px 5px;}
+.de-top h4 {font-size: 45px;line-height: 55px;}
+.de-top p{margin: 10px 10px 20px;}
+.dbox{width: 90%;}
+.cash-img{margin: 30px 0;}
+.topplay h4{margin:0 0 15px;}
+.promo-top .inner{padding: 0 20px}
+.promo-mdl p, .promo-nl p {margin: 25px 15px;}
+.promo-form input[type=text], .nl-box input[type=text], .pfcheck{width: 50%;}
+.nl-box{width: 60%;}
+.faq-box ul{margin: 0 10%;}
+.tinsta a:last-child{margin-top: 5px}
+a.read-btn{width: 70%}
+.gctlg{margin: 20px 10%}
+
+.supp-opt li{width: 22%;}
+.comp-bxc{padding: 0}
+.comp-bx{width: 31%;margin: 15px 5px;}
+.ftr-logo{padding-bottom: 10px;}
+}
+@media screen and (max-width:980px) {
+nav{top: 15px}
+.nav-lang{top:11px;right:15px}
+nav ul#menu{margin-top: 35px;height: calc(100vh - 35px);overflow: auto;padding-bottom: 20px;}
+nav li{display: block;text-align: left;border-bottom: 1px dashed rgba(255,255,255,.5);}
+nav li a{padding: 10px 15px;font-size: 24px;}
+nav li.subm:after{display: none}
+nav li ul{position: relative;top: auto;left: auto;border-radius: 0;}
+nav li ul li{border: 0;}
+nav li:hover ul{display: none}
+.logo img{width: 70%;}
+.pnk-ttl{font-size: 40px}
+.btm-part h1, .btm-part h2, .btm-part h3{font-size: 48px;line-height: 48px;}
+.register h3{font-size: 40px;font-weight: 300;}
+.register p{font-size: 20px;margin: 15px 20px 30px;}
+.counter {padding: 10px 20px 30px;}
+ul.home-list{margin: 10px 0 50px;}
+.amb-ttl h2 {font-size: 40px;width: 55%;line-height: 40px;}
+.ecover{background-size: auto 100%}
+.midtxt h3{font-size: 72px}
+.midtxt h4{font-size: 44px}
+.earn-money ul{width: 100%;}
+.register h2{font-size: 48px}
+.comingsoonc li{width: 10%;}
+.flag-ttl{font-size: 38px}
+.bbq{font-size: 55px;line-height: 65px;}
+.tt-ryt{width: 100%;text-align: center;margin: 0;padding:30px 0 0}
+.tt-ryt .deTtl{text-align: center;}
+.girlcont{position: relative;left: auto;bottom: auto;margin: 0 auto}
+.p-ebox{width: 45%;}
+.misc-icon a:first-child {display: block;}
+.nxtevents{margin: 40px 20px 60px;}
+.enews h5{margin: 0 0 15px}
+.beff span{margin: 20px 10px 0}
+.club-box {width: 45%;margin: 20px 10px 0;}
+.twtr-feed li span{height: 340px;}
+
+.main-txt{width: 96%;}
+.txt-hdr h1,.txt-hdr a{font-size:24px}
+.tv-txt{font-size: 18px}
+.sml-ttxt {width: 90%;}
+.txt-hdr hr{margin: 15px 0}
+.lp-bar{width: 90%;}
+.soldoutc h5{font-size: 70px;}
+.p2p-ebox{width: 90%;}
+.btm-info li, .dlbox-inv {width: 45%;}
+.et-logo img{max-width: 90%;height: auto;}
+.equity-token p, .token-store p {margin: 40px 0;}
+.bankc p{margin: 30px 0}
+.cc-img {margin: 10px 20%;}
+.atm-img {margin: 50px 5% 10px;}
+.register h2 br, .register h3 br{display: none}
+.top-logos li{width: 25%;}
+.tabc-inner .misc-icon a img{width: 60px;}
+.tabc-inner .misc-icon a:first-child{display: inline-block}
+ .mc-box {width: 100%;margin: 15px 0}
+.blogc {width: 80%;display: block;margin: 15px auto}
+.media-coverage {width: 80%;padding: 0;display: block;margin: 15px auto}
+.btm-webinar h3,
+.btm-webinar ul {width: 100%;}
+.btm-webinar h2 {font-size: 36px;}
+.btm-webinar p {margin: 20px;}
+.price-today {width: 80%;}
+.cash-img{border-radius: 15px;}
+.promo-top{padding-top: 20px!important}
+.promo-top h3{font-size: 50px}
+.promo-top h4, .promo-mdl h3, .promo-nl h3{font-size: 30px;font-weight: 300;}
+.nl-box{width: 80%;}
+.promo-top .dlbox-inv{width: 40%;}
+.faq-box{padding: 0 5% 30px;}
+.faq-box ul{margin: 0;}
+.gctlg span{width: 100%;text-align: center;}
+.gctlg span:last-child{float: none;text-align: center;margin-top: 10px;}
+.cgprice{padding-left: 0;text-align: center;}
+
+.bf-time{width: 86%;}
+.cavatr{width: 120px;right: -60px;margin-top: auto;}
+.zoomicon{width: 120px;left: -60px;}
+.bf-time h5{font-size: 60px;}
+.btc-facts h5 br {display: none;}
+.purpose h3{margin: 0 0 15px;}
+.purpose p, .liveama p{margin: 0}
+.lvid li{width: 45%;}
+.purpose li{width: 45%;margin: 70px 10px;}
+.team-ebox{width: 90%;}
+.team-ebox span{margin: -70px auto 0;width: 150px;}
+.yt-80{width: 90%;}
+.top-tfeed span{width:100%}
+.ttfeed{width:100%;padding: 20px 0 0;}
+.twtr-feed li{width: 50%;}
+}
+
+@media only screen and (max-height: 770px) {
+.media-logos li{width: 33.333%;}
+}
+
+@media screen and (max-width:760px) {
+.comingsoonc li{width: 18%;}
+.contact li{width: 90%;}
+.girlcont {width: 80%;}
+.p-ebox, .bloglst li{width: 90%;margin: 10px;}
+}
+@media screen and (max-width:680px) {
+html, body{-webkit-overflow-scrolling: touch;}
+.top-vidC{background: url(../images/bg-loading-mob.jpg) center center no-repeat;
+	background-size: 100%;}
+.mob-bar{margin-right: 18px;}
+.mob-th{display: block;text-align: center;margin: 15px 0}
+.mob-th small{display: inline-block;vertical-align: middle;}
+.mob-th span{display: inline-block;vertical-align: middle;width: 20%;margin-right: 15px;}
+.mob-th span img{width: 100%;height: auto;}
+nav ul#menu{-webkit-backdrop-filter: saturate(180%) blur(20px);backdrop-filter: saturate(180%) blur(20px);background: rgba(112,42,84,.7);}
+nav li ul{-webkit-backdrop-filter: saturate(180%) blur(20px);backdrop-filter: saturate(180%) blur(20px);background: rgba(99,32,72,.5);}
+nav li:hover{background: transparent;}
+.langDrp a{padding:8px}
+.langDrp {width: 310px;}
+.langDrp a {padding: 6px 8px;font-size: 14px;width: 47.5%;}
+.langDrp a img {width: 20px;height: auto;margin-right: 5px;}
+a.login-btn, .vidbg, .txt-hdr span, .txt-hdr small{display:none}
+.mob{display:block!important}
+header.ml .mob-bar{margin-right: 65px;}
+header.ml .nav-lang{right: 15px;}
+.desk,.txt-hdr a{display:none!important}
+.txt-hdr{padding:20px}
+.txt-hdr h1, .tv-txt{font-size:8vw}
+.toptxt{padding:30px 0}
+.deTtl{font-size:8vw;line-height:10vw;font-weight:300}
+.toptxt h3{font-size: 6.5vw!important;line-height: 8vw!important;font-weight: 300!important;}
+.toptxt p{font-size:5vw;line-height:7vw;font-weight: 300;}
+.ryt-contC{position:relative;width:100%;padding:0}
+.vidbg-mob{display: block}
+.misc-icon a:first-child{display: block;}
+.participants h4{font-size: 4.5vw;line-height: 6.5vw;margin: 0 0 30px;}
+a.pnk-btn, .enews h5{font-size: 5vw}
+.nxtevents h5{font-size: 4.5vw}
+.bloglst li h4{font-size: 4vw;}
+.enews{border-radius: 10px;padding: 15px 20px;}
+.enews input[type=text]{width: 100%;margin: 0;}
+.enews input[type=submit]{width: 100%;margin: 10px 0 0;}
+
+.ryt-cont{position: relative;width: 100%;padding: 0;}
+img.mob{display: block;}
+.main-txt{padding-top: 0;}
+.counter {padding: 10px;}
+a.mob-btn-only {display: block;width: 50%;position: absolute;right: 10px;bottom: 50px;z-index: 999;border-radius: 100px;font-size: 5vw;line-height: 5vh;font-weight: 300;background: #682046;color: #fff;padding:4px 20px;border: 3px solid #fff;text-align: center;}
+.logo img{width: 70%;}
+.vimeo-vid{margin: 15px 0 25px;}
+.amb-ttl{padding-top: 35px;}
+.amb-ttl h2{font-size: 8vw;line-height: 8vw;font-weight: 300;width: 100%;}
+.amb-ttl h2:before, .amb-ttl h2:after{display: none}
+.ecover{background-size: 250%;padding-bottom:25px}
+.ecover p{font-size:4.5vw;line-height: 6.5vw;margin: 25px 0 0;}
+.btm-part h1, .btm-part h2, .btm-part h3{font-size: 8vw;line-height: 6vw;font-weight: 300;}
+.btm-part h1{margin-top: 30px;}
+.btm-part{padding: 1px 0 35px;}
+.pnk-ttl{font-size: 9vw;line-height: 10vw;padding:18px 10px;}
+.earn-money{padding: 20px 0 0;}
+.earn-money ul{margin: 10px 0;}
+.earn-money li{width: 90%;margin: 10px;}
+.earn-money li h3{font-size: 6vw;line-height: 8vw;font-weight: 400;}
+.earn-money li h4{font-size: 5vw;line-height: 7vw;}
+.reg-num{padding: 30px 0 20px;}
+.reg-num h3{font-size: 7vw;}
+.reg-num h2{font-size: 15vw;}
+ul.home-list{margin: 25px 10px;}
+.home-list li{width: 50%;padding: 10px 5px;}
+.register{padding: 35px 0;}
+.register h3{font-size: 7vw}
+.register p {font-size:4.5vw;margin: 15px 10px 30px;}
+.register span{width: 75%;}
+.register button, a.pinkbtn{width: 80%;font-size: 7vw;font-weight: 300;padding: 15px 25px;}
+hr.mob, .bbq strong{display: block;}
+.counter, .bbq br{display: none}
+.counter-mob{display: block;margin: 0 10px;}
+.midtxt h3{font-size: 9.5vw}
+.midtxt h4{font-size: 7vw;font-weight: 300;}
+.midtxt{padding-top: 30px;}
+.midtxt hr{margin-top: 30px;}
+.earn-money li h2{font-size: 6.5vw;padding:10px;}
+.earn-money li img{width: 50%;}
+.comingsoon, .livenow{padding: 5px 12px;font-size: 14px;}
+.register h2{font-size: 8vw}
+.bbq{padding: 0 0 10px;font-size: 11vw;font-weight: 300;line-height: 11.5vw;}
+.songopt h4{font-size: 6vw;font-weight: 300;}
+.songopt li{margin: 3px;}
+.songopt li img{width: 34px;}
+.comingsoonc li h5{font-size: 3vw}
+
+.debox{width: 100%;margin: 40px auto;}
+.top-ttl{font-size: 6.5vw;line-height: 7.5vw;font-weight: 300;}
+.flag-ttl{font-size: 7vw;line-height: 8vw;}
+.logosC{padding: 0;}
+.logosC h3{font-size: 7vw;font-weight: 300;}
+ul.media-logos{padding-bottom: 40px;}
+ul.ecosys-logo{margin-top: 30px;}
+.media-logos li {width: 50%;}
+.media-logos li span img {max-width: 90%;height: 26px;}
+.ecosys-logo li{width: 100%;margin: 5px 0;}
+.ecosys-logo li img {height: 40px;}
+.exchanges img, .partners img {width: auto;height: 38px;}
+.beff{padding: 20px 0 30px}
+.beff span{margin: 0}
+.participants{padding: 30px 0}
+
+.sml-ttxt{margin-top: 30px;}
+.sml-ttxt h2 {font-size: 8.5vw;line-height: 10.5vw;font-weight: 300;}
+.sml-ttxt h3, .beff h3, #mission .beff h3 {font-size: 4.5vw;line-height: 7vw;font-weight: 300;margin: 10px;}
+
+.top-tfeed{margin: 10px 5% 50px;}
+.ttfeed p{font-size: 5vw;}
+.ttfeed small{font-size: 3.4vw;}
+.twtr-feed li{padding: 10px 5px;text-align: center;}
+.twtr-feed li span{height: 156px;}
+.twtr-feed li small{text-align: center;}
+.opening{font-size: 7vw;font-weight: 300;line-height: 8vw;}
+.opening h4{font-size:8vw;line-height: 10vw;margin-top: 20px;font-weight: 400;}
+.opening h4 br{display: block;}
+.opening h4 small{font-size: 6vw;font-weight: 300;display: block;margin-top: 5px;}
+.supp-opt li{width: 94%;}
+.companyC{padding-bottom: 20px;}
+.companyC h2{font-size: 7vw;font-weight: 300;}
+.comp-bx, .comp-bx:nth-child(3){width: 95%;margin: 10px 0}
+.partner-logo img {margin: 10px 0;}
+.nxtevents{margin: 40px 0 30px;}
+
+.p360-top img {max-width: 70%;}
+.p360-top{padding: 30px 0;}
+.p360-top h3{font-size: 7vw;font-weight: 300;}
+.p360-top p{font-size: 5vw;line-height: 7vw;font-weight: 300;margin: 10px 0}
+.p360-tab span{font-size: 5vw;}
+.club-box{width: 48%;margin: 10px .5%;padding: 15px 20px 20px;}
+.poweredby{margin: 10px 0 15px;}
+.poweredby small{font-size: 3vw;padding: 0;line-height: 3.4vw;}
+.club-url{font-size: 4vw;margin-bottom: 15px;}
+a.cb-btn{font-size: 4vw;padding: 1px 15px;}
+.club-box img{max-height: 55px;max-width: inherit}
+.planC p {line-height: 9vw;font-weight: 300;font-size: 7vw;}
+
+.delogo img, .de-logo img, .tt-logo img, .ts-logo img, .bk-logo img{max-width: 90%}
+.btc-facts h2{font-size: 10vw}
+.bf-time{width: 86%;font-size: 7vw; padding:13px 20px}
+.bf-time h5{font-size: 7vw;}
+.zoomicon{left: -30px;width: 70px;top: -5px;}
+.cavatr{right: -30px;width: 65px;}
+.btc-facts.btm h3{font-size: 7.5vw}
+.btc-facts.btm h5{font-size: 6vw;line-height: 8vw;padding: 15px;}
+.btc-facts.btm h5 br{display: block;}
+.purpose h3{font-size: 6vw;font-weight: 300;line-height: 8vw;}
+.purpose p, .liveama p, .team p{font-size: 5vw;line-height: 7vw;}
+.yt-80{width: 100%;margin-bottom: 20px;}
+.purpose ul{margin-bottom: 40px;}
+.purpose li{width: 90%;margin: 35px 10px;}
+.purpose li:last-child{margin-bottom: 10px;}
+.purpose li h5{font-size: 6.5vw}
+.lvid h4{font-size: 7vw;font-weight: 300;}
+.lvid li{width: 95%;}
+.vidtop li{font-size: 16px;padding: 10px 15px 10px 40px;}
+.photo-cont h3{font-size: 7vw;font-weight: 300;}
+.photo-cont p {font-size: 5vw;line-height: 7vw;margin: 10px 0 50px;}
+.llogo{width: 100%;}
+.rintrvw{width: 100%;padding:0 10px 0;text-align: center;margin-top: 0;font-size: 5vw;line-height: 6.5vw;}
+.rintrvw h3{font-size: 7.5vw}
+.news-cont span{width: 40px;height: 40px;line-height: 40px;font-size: 5.5vw; }
+.ncr{width: calc(100% - 42px);}
+ul.news-cont{padding: 5px 15px;}
+.news-cont li h3{font-size: 5vw}
+.news-cont li p{font-size: 4vw}
+.topplay{padding: 30px 0;}
+.topplay h3{font-size: 8vw;font-weight: 300;margin: 0 0 15px;}
+.p2p-ebox{margin: 15px auto;}
+.p2p-ebox h5{font-size: 8vw;}
+.p2p-ebox h6{font-size: 10vw;}
+.p2p-ebox p{font-size: 6vw;}
+.p2p-ebox a{font-size: 5.5vw;line-height: 5.5vw;}
+.btm-info ul.row {display: block!important;}
+.btm-info li{width: 48%;margin: 5px .5%;}
+.dlbox-inv {width: 70%;margin: 5px .5%;}
+.inbi a {font-size: 3.5vw;}
+.inbi h5 {font-size: 5vw;font-weight: 300;line-height: 6vw;}
+.inbi small {font-size: 4vw;font-weight: 300;}
+.btm-info .inner {padding: 0 10px;}
+.token-top h3{font-size: 6vw;line-height: 8vw;margin: 30px 0 0;}
+.soldoutc{padding: 20px}
+.lp-bar{width: 100%;margin: 20px auto;}
+.pps-bar span{font-size: 7.5vw;height: 60px;line-height: 60px;}
+.pps-bar span:before{background-size: 2.2em 2.2em;}  
+@keyframes progress {to { background-position: 2.2em 0; }}
+.pps-bar{width: 100%;height: 60px;}
+.soldoutc h4{font-size: 7.5vw;}
+.soldoutc h5{font-size: 8.5vw;}
+.soldoutc h6{font-size: 7vw;}
+.soldoutc p{font-size: 5vw;}
+.soldoutc h5 i.exchange{width: 22px;height: 22px;}
+.xchange h4 {font-size: 6vw;font-weight: 300;line-height: 8vw;margin: 5px 5px 20px;}
+.etherscan img{width: 75%;}
+.etherscan h3 {font-size: 7vw;font-weight: 300;margin: 30px 0;}
+.ethadd {font-size: 5vw;word-break: break-all;}
+.ether-info a.de-btn, .photo-cont.alt a.de-btn{font-size: 5vw;}
+.ether-info p {font-size: 5vw;margin: 20px 0 1px;}
+.equity-token p, .token-store p {font-size: 5vw;line-height: 7vw;margin: 20px 0;font-weight: 300;}
+.equity-token, .token-store{padding: 50px 0 30px;margin-top: 40px}
+.token-store h4{font-size: 8vw;font-weight: 300;}
+.token-store h5{font-size: 6vw;line-height: 8vw;font-weight: 300;}
+.bankc h3{font-size: 7vw;font-weight: 300;}
+.bankc p{font-size: 5vw;line-height: 7vw;}
+.cc-img {margin: 10px 10%;}
+.atm-img {margin: 50px 0 10px;}
+.photo-cont.alt h4{font-size: 7vw;line-height: 9vw;margin: 15px 0;}
+.photo-cont.alt p {margin: 20px 0;}
+.idcont {padding: 10px;margin: 30px auto;border: 1px dashed #999;width: 90%;}
+.de-top h3{font-size: 9vw;line-height: 11vw;font-weight: 300;}
+.de-top h4{font-size: 8vw;line-height: 10vw;font-weight: 300;}
+.de-top p {font-size: 5vw;line-height: 7vw;}
+.tablnk a{margin: 15px 2px 0;font-size: 4.5vw;}
+.about h4, .tabc-inner h3{font-size: 9vw;font-weight: 300;}
+.tabc-inner h4{font-size: 5vw;line-height: 7vw;font-weight: 300;margin-left: 0;margin-right: 0;}
+.dbox{width: 100%;padding: 10px 20px 30px;}
+.about h3{font-size: 10vw;font-weight: 300;}
+.tabc-inner p, #tab4C .tabc-inner .beff h3{font-size: 5vw;line-height: 7vw;margin-left: 0;margin-right: 0;font-weight: 300;}
+.tabcnt .toptxt p{font-size: 5vw;font-weight: 300;line-height: 7vw;}
+.tabc-inner .misc-icon a{margin: 0 5px 10px}
+.tabc-inner .misc-icon a img{width: 45px;}
+.top-logos{margin-bottom: 10px;}
+.top-logos li{width: 50%;}
+.blogc, .media-coverage {width: 100%}
+.mc-box p {margin: 15px 7%;font-size: 18px;line-height: 28px;}
+.dett {text-align: center;padding: 10px 20px;font-size: 7vw;font-weight: 300;}
+a.show-btn {position: relative;top: 0;right: 0;display: inline-block;}
+.blogb h3 a {padding: 0 15px;font-size: 6vw;font-weight: 300;line-height: 8vw;}
+.blogb p {font-size: 4.5vw;line-height: 6.5vw;padding: 0 20px 15px;font-weight: 300;}
+.btm-webinar h2 {font-size: 7vw;}
+.btm-webinar h3 {font-size: 6vw;}
+.btm-webinar p {font-size: 4.5vw;}
+.bw-date {font-size: 4vw;}
+.team-ebox p{margin: 20px 15px 10px}
+.contact li span {top: -45px;width: 80px;height: 80px;margin-left: -40px;line-height: 80px;font-size: 36px;}
+.contact li{padding: 45px 20px 10px;}
+.purpose li span{margin: -45px auto 10px;width: 100px;height: 100px;line-height: 94px;}
+.purpose li span img{width: 60%;height: auto;}
+.cash-img{border-radius: 10px;}
+.uttop{margin: 0 0 30px}
+.twtr-feed{padding-top: 30px}
+.topplay h4{font-size: 5vw;line-height: 7vw;}
+.topplay p{font-size: 4vw;line-height: 6vw;}
+.token-top h4{font-size: 8vw;font-weight: 300;}
+.promo-top h3{font-size: 10vw;font-weight: 300;}
+.promo-top h4, .promo-mdl h3, .promo-nl h3{font-size: 7vw;line-height: 9vw;}
+.promo-top h5{font-size: 8vw;font-weight: 300;}
+.promo-top p{font-size: 5vw;line-height: 7vw;}
+.promo-mdl h4{font-size: 8vw}
+.promo-mdl p, .promo-nl p{font-size: 5vw;line-height: 7vw;margin: 25px 5px;}
+.promo-form input[type=text], .nl-box input[type=text], .pfcheck{width: 100%;margin: 7px 0;font-size: 6vw;}
+.promo-form input[type=submit], .nl-box input[type=submit]{width: 70%;font-size: 6vw;margin-bottom: 15px;}
+.top-acdmy, .purpose, .lvid, .liveama, .team, .vidtop, .promo-top, .promo-mdl, .promo-form, .promo-nl{padding: 30px 0 15px;}
+.promo-nl.pt40{padding-top: 5px}
+.nl-box{width: 100%;padding: 20px 20px 10px}
+.nl-box h4{font-size: 6vw}
+.pfcheck input[type="checkbox"] + label{font-size: 3.5vw;line-height: 4.5vw;}
+.thankc i{font-size: 40vw;}
+.thankc{padding: 40px 0;margin-top: 42px;}
+.thankc h1{font-size:8vw;margin-bottom: 30px;}
+.thankc h2{font-size:6vw;font-weight: 300;}
+.promo-top .dlbox-inv{width: 90%}
+.vimeo-vid h3{font-size: 5.8vw;font-weight: 300;}
+.faq-box{padding: 0 0 10px;}
+.faq-box h2{font-size: 7vw;font-weight: 400;}
+.faqQ h4{font-size: 5.5vw;line-height: 7.5vw;font-weight: 400;}
+.faqA p{font-size: 4.5vw;line-height: 6.5vw;}
+.cash-icon{width: 55%;}
+.cgprice{font-size: 11vw;line-height: 11vw;}
+.cgprice small{font-size: 8vw;line-height: 8vw;}
+.gctlg span img{width:auto;height: auto;max-height: 48px;max-width: 90%}
+
+.top-acdmy{margin-top: 0}
+.p360-top, .about{margin-top: 60px}
+.photo-cont, .de-top, .token-top, .bankc{margin-top: 40px}
+
+a.cb-btn, a.de-btn{font-size: 5vw;line-height: 7vw;}
+.contact{padding-bottom: 15px}
+.partner-logo img {max-width: 65%;height: auto;max-height: 50px}
+
+footer span a:first-child{display: block;}
+footer .inner{padding: 0;}
+footer span a svg{width: 26px;height: 26px;}
+footer span a {font-size: 26px;margin: 0 5px 10px;}
+}
+@media screen and (max-width:580px) {
+.mauticform-button-wrapper .mauticform-button.btn-default{font-size: 5vw!important;width: 90%!important;white-space: normal!important}
+
+
+}
+@media screen and (max-width:510px) {
+.html5player{width: 96%;}
+
+footer .inner{padding: 0;}
+footer span a{margin: 0 5px 10px;}
+}
+@media screen and (max-width:385px) {
+.ecosys-logo li img {height: 34px;}
+}
+@media screen and (max-width:330px) {
+.misc-icon a{margin: 5px;}
+.misc-icon a img{height: 42px;}
+
+footer .inner{padding: 0;}
+footer span a{margin: 0 2px 10px;}
+footer span a img{height: 26px;}
+}
+	
+	
+	

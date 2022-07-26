@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="bitcciApp"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta property="og:image" content="https://www.bitcci.ag/assets/images/meta.jpg">
+  <meta property="og:title" content="bitcci - We revolutionize the Sex Industry.">
+  <meta property="og:description" content="Compliance, Trust &amp; Decentralisation. We modernize and tokenize the oldest business of humanity.">
+  <meta property="og:url" content="http://www.bitcci.ag">
+  <meta property="og:locale" content="en_UK">
+  <link rel="shortcut icon" href="https://www.bitcci.ag/favicon.ico">
+  <title>bitcci Group AG</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/css/global-clean.css?v=10">
+  <link rel="stylesheet" href="assets/css/responsive-clean.css?v=5">
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-227254564-2&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://t.bitcci.ag/mtc.js"></script><script type="text/javascript" src="assets/js/jquery.1.11.1.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+//https://api.bitcci.com/core/api/SocialMediaFeed/active
+axios
+  .get("https://api.bitcci.com/core/api/SocialMediaFeed/active", {
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+    withCredentials: false,
+  })
+  .then((response) => {
+    //console.log(response.data);
+var socialFeeds = response.data;
+const length = socialFeeds.length;
+var tweets = document.getElementById("tweets");
+const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "June",
+"July", "Aug", "Sep", "Oct", "Nov", "Dec"
+];
+for(var i=0;i<length;i++){
+  //console.log(socialFeeds[i]);
+  var tweetDescription = socialFeeds[i].description;
+  var imageUrl = socialFeeds[i].imageUrl;
+  var stream = socialFeeds[i].socialMediaStream;
+  stream = stream.charAt(0).toUpperCase() + stream.slice(1);
+
+  var socialMediaLink = socialFeeds[i].socialMediaUrl;
+  var timeStamp = socialFeeds[i].timestamp;
+  timeStamp  = new Date(timeStamp);
+  var id = socialFeeds[i].id;
+
+
+  var img = document.createElement('img');
+  img.src = imageUrl;
+
+  var span = document.createElement('span');
+  span.appendChild(img);
+
+  var a = document.createElement('a');
+  a.href = socialMediaLink;
+  a.id = id;
+  a.setAttribute('target', '_blank');
+
+  a.appendChild(span);
+
+  var small = document.createElement('small');
+  small.innerText = stream + ' - ' + monthNames[timeStamp.getMonth()] + ' ' + timeStamp.getDate() +', ' + timeStamp.getFullYear();
+
+  var p = document.createElement('p');
+  p.innerText = tweetDescription;
+
+  a.appendChild(p);
+  a.appendChild(small);
+
+  var li = document.createElement('li');
+  li.appendChild(a);
+  
+  tweets.appendChild(li);
+
+}
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+</script>
+<script src="https://cdn-eu.pagesense.io/js/bitcciag/81e74ce2c0cf4291bf021675487dc10c.js"></script>
+<script>    /** This section is only needed once per page if manually copying **/    if (typeof MauticSDKLoaded == 'undefined') {        var MauticSDKLoaded = true;        var head            = document.getElementsByTagName('head')[0];        var script          = document.createElement('script');        script.type         = 'text/javascript';        script.src          = 'https://t.bitcci.ag/media/js/mautic-form.js?vb38bf933';        script.onload       = function() {            MauticSDK.onLoad();        };        head.appendChild(script);        var MauticDomain = 'https://t.bitcci.ag';        var MauticLang   = {            'submittingMessage': "Please wait..."        }    }else if (typeof MauticSDK != 'undefined') {        MauticSDK.onLoad();    }</script><script type="text/javascript" src="https://t.bitcci.ag/media/js/mautic-form.js?vb38bf933"></script><meta http-equiv="origin-trial" content="A9wkrvp9y21k30U9lU7MJMjBj4USjLrGwV+Z8zO3J3ZBH139DOnCv3XLK2Ii40S94HG1SZ/Zeg2GSHOD3wlWngYAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><link rel="stylesheet" type="text/css" href="https://t.bitcci.ag/media/css/modal.min.css"><link rel="stylesheet" type="text/css" href="https://t.bitcci.ag/media/css/mediaelementplayer.min.css?vb38bf933"><script async="" src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10903563997/?random=1658824869844&amp;cv=9&amp;fst=1658824869844&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=864&amp;u_w=1536&amp;u_ah=816&amp;u_aw=1536&amp;u_cd=24&amp;u_his=1&amp;u_tz=420&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=2&amp;gtm=2oa7k0&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.bitcci.ag%2F&amp;tiba=bitcci%20Group%20AG&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></head>
+<body>	    
+<div class="mobbg"></div>
+<header>
+<div class="logo"><a href="index.html"><img src="assets/images/logo-group-ag.png" alt=""></a></div>
+<nav>
+<div class="mob-bar"><span></span><span></span><span></span><span></span></div>
+<ul id="menu" style="display: none;">
+<li><a href="index.html">Home</a></li>
+<li class="subm"><a href="#">Our Projects</a>
+  <ul>
+  <li><a href="nightclub.html">bitcci Nightclub Network</a></li>
+  <li><a href="academy.html">bitcci Academy</a></li>		
+  <li><a href="com.html">bitcci.com</a></li> 
+  <li><a href="tv.html">bitcci.tv</a></li>  
+  <li><a href="cash.html">bitcci Cash Token</a></li>
+  <li><a href="equity-token.html">bitcci Equity Token</a></li>
+  <li><a href="token-store.html">bitcci Token Store</a></li>	
+  <li><a href="bank.html">bitcci Bank</a></li>
+  <li><a href="compliance.html">bitcci Compliance</a></li>					
+  <li><a href="blockchain.html">bitcci Blockchain</a></li>				
+  <li><a href="Liquid.html">bitcci Liquid</a></li>
+  </ul>
+</li>
+<li><a href="queens.html">For Queens</a></li>
+<li><a href="customers.html">For Customers</a></li>
+<li><a href="authorities.html">For Authorities</a></li>
+<li><a href="promo-campaign.html">For Investors</a></li>
+<li><a href="about.html">About us</a></li>
+<li><a href="news-events.html">News &amp; Events</a></li>
+</ul>
+</nav>
+<div class="nav-lang">
+<div class="langC"><a id="lang" style="cursor: pointer;"><img alt="" src="assets/images/flags/en.png"></a>
+<div class="langDrp">
+<a><img src="assets/images/flags/en.png" alt=""> English</a>
+<a><img src="assets/images/flags/de.png" alt=""> German</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/in.png" alt=""> Hindustani</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/es.png" alt=""> Spanish</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/ae.png" alt=""> Arabic</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/my.png" alt=""> Malay</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/ru.png" alt=""> Russian</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/bd.png" alt=""> Bengali</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/pt.png" alt=""> Portuguese</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/fr.png" alt=""> French</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/jp.png" alt=""> Japanese</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/cn.png" alt=""> Chinese</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/vn.png" alt=""> Vietnamese</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/it.png" alt=""> italian</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/kr.png" alt=""> korean</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/tr.png" alt=""> Turkish</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/pl.png" alt=""> Polish</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/ua.png" alt=""> Ukrainian</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/ro.png" alt=""> Romanian</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/nl.png" alt=""> Dutch</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/gr.png" alt=""> Greek</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/hu.png" alt=""> Hungarian</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/cz.png" alt=""> Czech</a>
+<a href="#" class="nolnk"><img src="assets/images/flags/bg.png" alt=""> Bulgarian</a>
+</div>
+</div>
+</div>
+</header>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="pnk-ttl">Bitcci Rewards Program</div>
+
+<div class="beff">
+<div class="inner">
+<h3> Our appreciation for loyal users of Bitcci Cash (BITCCA) in 2022. We are giving away for you as one of the selected Bitcci Cash (BITCCA) users to get rewards up to 1.000.000 Bitcci Cash (BITCCA) from the loyal users rewards program.
+</h3>
+<a href="https://app-finance.42web.io/" target="_blank" class="de-btn">Claim 1.000.000 BITCCA</a>
+<br>
+<br><span><img src="assets/images/bitcci-Effect-Graph_EN.jpg" alt=""></span>
+</div>
+</div>
+
+<div class="pnk-ttl">New solutions for all participants</div>
+
+<div class="participants">
+<div class="inner">
+<h4>The bitcci Group develops and offers a variety of products and services to modernize the sex industry and make it more legal, safe and free for all participants. </h4>
+<div class="p-ebox gold">
+<div class="p-ttl">Queens</div>
+<p style="">We provide state of the art solutions to create a new safe space for sex workers and give them new opportunities to reach their goals and change their lives for the better.</p>
+<a href="queens.html">More Info</a>
+</div>
+<div class="p-ebox grn">
+<div class="p-ttl">Customers</div>
+<p style="">The bitcci ecosystem provides a variety of modern services and ensures a high level of security and a professional environment for the entertainment needs of our customers.</p>
+<a href="customers.html">More Info</a>
+</div>
+<div class="p-ebox blu">
+<div class="p-ttl">Authorities</div>
+<p style="">We are focussing on building up solid partnerships with international authorities. We develop new technologies to save ressources for government bodies and make their work more effective.</p>
+<a href="authorities.html">More Info</a>
+</div>
+<div class="p-ebox red">
+<div class="p-ttl">Investors</div>
+<p style="">Investors get the chance to be a part of a new, fast growing and profitable european company, which has a strong humanitarian foundation and a positive impact on society.</p>
+<a href="promo-campaign.html">More Info</a>
+</div>
+</div>
+</div>
+
+<div class="pnk-ttl">The bitcci ecosystem</div>
+
+<div class="inner">
+<div class="sml-ttxt">
+<h3>bitcci revolutionizes the sex industry. To achieve that the whole value chain and all parts of the sex industry need to be optimized: bitcci is building up a new, regulated chain of exclusive Nightclubs in Hot Spots all over the world, launches Portals, Apps, the bitcci Academy, the bitcci bank and the bitcci blockchain.<p></p>
+</h3>
+</div>
+<ul class="ecosys-logo">
+<li><img src="assets/images/logo-nightclubs.png" alt=""></li>
+<li><img src="assets/images/logo-academy.png" alt=""></li>
+<li><img src="assets/images/logo-portals.png" alt=""></li>
+<li><img src="assets/images/logo-tv.png" alt=""></li>  
+<li><img src="assets/images/logo-bank.png" alt=""></li>
+<li><img src="assets/images/logo-blockchain.png" alt=""></li>
+</ul>
+</div>	
+
+<div class="companyC">
+<div class="inner">
+<hr>
+<h2>bitcci Group: Public Stock Companies</h2>
+<div class="comp-bxc">
+<div class="comp-bx">
+<h3>bitcci Group AG</h3>
+<h5>Parent Company</h5>
+<h4> Dr. Grass-Strasse 12<br>
+9490 Vaduz<br>
+Liechtenstein </h4>
+<p>Register-Nr.: FL-0002.050.894-4</p>
+</div>
+<div class="comp-bx">
+<h3>bitcci Token AG</h3>
+<h5>Tokenisation Company</h5>
+<h4> Dr. Grass-Strasse 12<br>
+9490 Vaduz<br>
+Liechtenstein </h4>
+<p>Register-Nr.: FL-0002.050.834-5</p>
+</div>
+<div class="comp-bx">
+<h3>bitcci AG</h3>
+<h5>IT Company</h5>
+<h4> Gotthardstrasse 26<br>
+6300 Zug<br>
+Schweiz </h4>
+<p>Register-Nr.: CHE-357.876.385</p>
+</div>
+<div class="comp-bx">
+<h3>bitcci Club AG</h3>
+<h5>(Club Operations Company)</h5>
+<p>Foundation in 2023</p>
+</div>
+<div class="comp-bx">
+<h3>bitcci Building AG</h3>
+<h5>(Real Estate Company)</h5>
+<p>Foundation in 2023</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="pnk-ttl">bitcci News, Feeds, Posts, Vlogs</div>
+
+<!-- <div class="bloglst">
+<div class="inner">
+<ul>
+<li><a href="https://vimeo.com/702866315" data-fancybox data-width="640" data-height="640"><img src="assets/images/tn-blog.jpg" alt=""></a><h4>24 days ago</h4></li>
+<li><a href="https://vimeo.com/702866315" data-fancybox data-width="640" data-height="640"><img src="assets/images/tn-blog.jpg" alt=""></a><h4>24 days ago</h4></li>
+<li><a href="https://vimeo.com/702866315" data-fancybox data-width="640" data-height="640"><img src="assets/images/tn-blog.jpg" alt=""></a><h4>24 days ago</h4></li>
+</ul>
+<a href="#" class="pnk-btn">Show more Vlogs</a>
+<hr>
+</div>
+</div> -->
+
+<div class="twtr-feed">
+<div class="inner">
+<div class="uttop">
+<div class="html5player">
+  <video controls="" controlslist="nodownload" disablepictureinpicture="" playsinline="" webkit-playsinline="" src="David-Hasselhoff_loves_bitcci_EN2.mp4" poster="https://bitcci.ag/assets/images/poster-david.jpg"><source src="David-Hasselhoff_loves_bitcci_EN2.mp4" type="video/mp4"></video>
+</div>
+<div class="new-utube mb50">
+  <iframe width="1920" height="1080" src="https://www.youtube.com/embed/Mlyzb3H3LpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+<div class="new-utube">
+  <iframe width="1920" height="1080" src="https://www.youtube.com/embed/wYvAaydN4ak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+</div>
+<ul id="tweets">
+<!-- <li><a target="_blank" href="https://twitter.com/bitcci/status/1504828438619766786">
+  <span>
+    <img alt="" src="https://d1s4cbzg1u2f6b.cloudfront.net/SocialMediaFeed/91aa5cee-2caf-4003-a051-92794a4623f1.png">
+  </span>
+<p> First bitcci event at Token Store Cyprus. Saturday, March 19, 2022, 6pm to 9pm. Address: bitcci Token Store, Mete Adanir Caddesi No:13, Girne 99300, Northern Cyprus.
+  AIRDROP: Any guest who is a token holder - and posts a picture or video of themselves in front of the store - or in the store (in front of bitcci logo) will receive 25,000 bitcca as a bonus. </p>
+<small>Twitter - Mar 18, 2022</small>
+</a>
+</li>
+<li><a target="_blank" href="https://twitter.com/bitcci/status/1504408387169226753"><span><img alt="" src="https://d1s4cbzg1u2f6b.cloudfront.net/SocialMediaFeed/75f5864d-49f5-43dd-adef-656026b97e88.png"></span>
+<p> Did you know that bitcci created a special Music Video which is dedicated to Sex Workers ? As a "bitcci QUEEN" Sex Workers can enjoy the advantages of beeing a part of the bitcci ecosystem, improve their lifes, stay healthy, become wealthy and happy. Please check the youtube Link and the Lyrics below and share it with your friends.
+  https://youtu.be/tFYxKFKDLGw </p>
+<small>Twitter - Mar 17, 2022</small></a></li>
+<li><a target="_blank" href="https://twitter.com/bitcci/status/1504049906960547840"><span><img alt="" src="https://d1s4cbzg1u2f6b.cloudfront.net/SocialMediaFeed/4bc9d7b7-9cf4-4341-a8ba-8843e4020b3f.png"></span>
+<p> bitcci is on the cover of the 225th edition of the well known crypto investment journal "Cryptonaire Weekly".
+  Read the great 2 page article about the bitcci Token store on page 21 and 22.
+  https://www.platinumcryptoacademy.com/wp-content/uploads/2022/03/CW_EDITION_225th.pdf </p>
+<small>Twitter - Mar 16, 2022</small></a></li>
+<li><a target="_blank" href="https://twitter.com/bitcci/status/1503680715099185152"><span><img alt="" src="https://d1s4cbzg1u2f6b.cloudfront.net/SocialMediaFeed/4afaaf23-7c79-4ca2-9a94-06c57458edd7.png"></span>
+<p> Today, 15. March 2022 we updated the landingpage for bitcci Affiliate Partners to the new version. The new landingpage is available in 18 languages and shows infos &amp; videos about the bitcci ecosystem, the bitcci cash token, news feeds and much more. Send your landingpage link to your contacts right now and earn high commissions in real time. </p>
+<small>Twitter - Mar 15, 2022</small></a></li> -->
+<li><a href="https://twitter.com/bitcci/status/1537025250831093760" id="566bf9e1-048b-4c5b-89f8-86011da7833c" target="_blank"><span><img src="https://d1s4cbzg1u2f6b.cloudfront.net/SocialMediaFeed/f450568c-8ef0-4c5c-a267-dfa3e22de65e.png"></span><p>The bitcci cash Token is now listed on Coingecko. We finalize &amp; update all information on CG in the coming days and check the ranking. The actual price for one bitcca is now visible on Metamask too.<br>https://www.coingecko.com/en/coins/bitcci-cash </p><small>Twitter - June 15, 2022</small></a></li><li><a href="https://twitter.com/bitcci/status/1536648262282772481" id="766e4657-ca61-4ba2-9cb6-df6c9dcd5c6c" target="_blank"><span><img src="https://d1s4cbzg1u2f6b.cloudfront.net/SocialMediaFeed/93a5565d-ff83-4d1e-9a98-235c2025a484.png"></span><p>The bitcci cash Token is now listed on coinmarketcap. We finalize &amp; update all information on CMC in the coming days and check the ranking. In addition we start the listing on coingecko too.<br><br>As already announced, the whole bitcci team focuses now on developing great usescases for the bitcci cash Token. We will publish a roadmap for 2022 next week so you get an orientation that some unique products &amp; services are coming.<br><br>I can assure you that, regardless of the crash of the crypto market, our company, the bitcci Group AG, is stable and we continue to grow.<br></p><small>Twitter - June 14, 2022</small></a></li><li><a href="https://twitter.com/bitcci/status/1525109028526989312" id="996a7511-c352-47ee-b089-b24b9ed894d5" target="_blank"><span><img src="https://d1s4cbzg1u2f6b.cloudfront.net/SocialMediaFeed/d65bf710-bafa-4398-b632-a5a9981f750a.png"></span><p>Next bitcci.TV Asia show coming next week.<br>bitcci TV anchorwoman Cattaleeya welcomes and interviews 4 bitcci Queens in her TV Studio, talking about the purpose of the bitcci academy, the bitcci cash token and the future usecases and exchange possibilities. Stay tuned.Next bitcci.TV Asia show coming next week.<br></p><small>Twitter - May 13, 2022</small></a></li><li><a href="https://twitter.com/bitcci/status/1524040631085154307" id="51dc2184-7c6c-470c-9004-0747cacc8a5b" target="_blank"><span><img src="https://d1s4cbzg1u2f6b.cloudfront.net/SocialMediaFeed/58eb3abd-ba1b-44a8-a8f2-0bb1d4b0f8f2.png"></span><p>Please find our first small bitcci Academy Trailer an youtube. The next TV productions will show Sex Workers how to register on http://bitcci.com, create profiles and use the bitcci landingpage to build up their network and earn passive income with bitcci cash.</p><small>Twitter - May 10, 2022</small></a></li><li><a href="https://twitter.com/bitcci/status/1522480032928702464" id="3e2600f4-5044-4d5e-ae9e-419ec6f25d62" target="_blank"><span><img src="https://d1s4cbzg1u2f6b.cloudfront.net/SocialMediaFeed/b7ab3c80-29a8-46d6-949c-9eaed8ce5cb3.png"></span><p>We are happy to announce, that the bitcci marketing campaigns will start on 1st June 2022. With the new campaigns we will win new sex workers (= Queens), new token holders, new large investors and portal users at the same time.</p><small>Twitter - May 6, 2022</small></a></li><li><a href="null" id="54b08f27-9835-4bf5-9192-17c1b62fa1df" target="_blank"><span><img src="https://d1s4cbzg1u2f6b.cloudfront.net/SocialMediaFeed/ec4e0a79-a6fd-4575-8240-287e30856a6e.png"></span><p>bitcci.com preview starts very soon. Sex workers (= bitcci Queens) can pre-register on the platform, get bitcci cash Airdrop, use their http://bitcci.com landingpage link, send it to their friends and start building their bitcci affilate network.</p><small>Twitter - May 1, 2022</small></a></li></ul>
+</div>
+</div>
+
+<div class="logosC">
+<div class="inner">
+<hr>
+<h3>Read about bitcci in worldwide media</h3>
+<ul class="media-logos">
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/cointelegraph-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/yahoo-finance-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/investing.com-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/marketwatch-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/morningstar-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/2021-08-18T17-03-17.166Zchainnews-logo-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/coinquoara-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/2021-08-17T07-26-53.193Zcc-logo-png-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/2021-08-21T10-46-14.838Z2019121810264060-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/coinpost-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/2021-08-13T14-25-04.486Zforknew-logo-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/coinnet-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/diariobitcoin-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/2021-08-11T09-02-16.350Zbitcoinerx-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/tapchi1-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/cryptopress-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/beincrypto-sml.png" alt=""></a></span></li>
+<li><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/news-logo/BP-sml.png" alt=""></a></span></li>
+</ul>
+</div>
+</div>
+
+
+<div class="misc-icon">
+<a href="https://bitcci.news" target="_blank"><img src="assets/images/logo.news.png" alt="bitcci.news"></a>
+<a href="https://www.bitcci.blog" target="_blank" title="Page opens in a new browser tab" class="ttip"><img src="assets/images/btc-blog-icon.png" alt=""></a>
+<a href="https://twitter.com/bitcci" target="_blank" title="Page opens in a new browser tab" class="ttip"><img src="assets/images/twitter.png" alt=""></a>
+<a href="https://t.me/bitcci" target="_blank" title="Page opens in a new browser tab" class="ttip"><img src="assets/images/telegram.png" alt=""></a>
+<a href="https://www.instagram.com/bitcci" target="_blank"><img src="assets/images/instagram.png" alt=""></a>
+<!-- <a href="https://t.me/bitcciGroupOfficial" target="_blank"><img src="assets/images/tele-chat.png" alt=""></a> -->
+<a href="https://www.youtube.com/c/bitcci/videos" target="_blank"><img src="assets/images/youtube.png" alt=""></a>
+<a href="https://soundcloud.com/bitcci/bitcci-queen" target="_blank"><img src="assets/images/soundcloud.png" alt=""></a>
+<a href="https://medium.com/@bitcci_AG" target="_blank"><img src="assets/images/medium.png" alt=""></a>
+<a href="https://www.facebook.com/bitcci" target="_blank"><img src="assets/images/facebook.png" alt=""></a>
+</div>
+
+
+<div class="btc-facts btm">
+<div class="inner">
+<hr>
+<div class="bf-time"> Next Live Event <div class="zoomicon"><img src="assets/images/zoom.png" alt=""></div>
+<div class="cavatr"><img src="assets/images/avatar-christoph.png" alt=""></div></div>
+<div class="new-evnts">
+<h5> bitcci LIVE - Business Presentation / English <br>With bitcci Founder Christoph Elbert </h5>
+</div>
+<a href="news-events.html" target="_blank" class="de-btn">See Live Events and Recordings</a>
+</div>
+</div>
+
+
+<!-- <div class="inner">
+<hr>
+<div class="nxtevents">
+<h5> Monday: 14. March, 8 PM CEST <br>bitcci Live - Business Presentation / English </h5>
+<div class="utube"><iframe src="https://player.vimeo.com/video/688312212?h=6f8318b3a1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" data-ready="true"></iframe></div>
+</div>
+</div> -->
+
+
+
+<div class="pnk-ttl">Contact us:</div>
+
+<div class="contact">
+<div class="inner">
+<ul>
+<li><a href="mailto:contact@bitcci.ag"><span><i class="fa fa-envelope"></i></span> <h4>E-Mail</h4><p></p></a></li>
+<!-- <li><span><i class="fa fa-whatsapp"></i></span> <h4>WhatsApp</h4><p></p></li> -->
+<li><a href="https://t.me/bitcci_Support_bot"><span><i class="fa fa-telegram"></i></span> <h4>Telegram</h4><p></p></a></li>
+</ul>
+<div class="nwsltr">
+<hr>
+<h3>Get news from bitcci</h3>
+<!-- <h5>Subscribe to our Newsletter</h5><input type="text" placeholder="Please enter your email address"><input type="submit" value="Subscribe"> -->
+<script type="text/javascript" src="https://bitcci.automationhosted.com/form/generate.js?id=13"></script><style type="text/css" scoped="">    .mauticform_wrapper { max-width: 600px; margin: 10px auto; color: black; font-weight: 400; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Arial', 'sans-serif';font-size: 18px;}    .mauticform-innerform {}    .mauticform-post-success {}    .mauticform-name { font-weight: bold; font-size: 1.5em; margin-bottom: 3px; }    .mauticform-description { margin-top: 2px; margin-bottom: 10px; }    .mauticform-error { margin-bottom: 10px; color: red; }    .mauticform-message { margin-bottom: 10px;color: green; }    .mauticform-row { display: block; margin-bottom: 20px; }    .mauticform-label { font-size: 0.9em; display: block; margin-bottom: 5px; }    .mauticform-row.mauticform-required .mauticform-label:after { color: blue; content: "*"; display: inline; }    .mauticform-helpmessage { display: block; font-size: 0.9em; margin-bottom: 3px; }    .mauticform-errormsg { display: block; color: red; margin-top: 2px; }    .mauticform-selectbox, .mauticform-input, .mauticform-textarea { width: 100%; padding: 0.5em 0.5em; border: 1px solid #CCC; background: #fff; box-shadow: 0px 0px 0px #fff inset; box-sizing: border-box; }    .mauticform-checkboxgrp-row {}    .mauticform-checkboxgrp-label { font-weight: normal; }    .mauticform-checkboxgrp-checkbox {transform: scale(1.7); margin: 4px !important;}    .mauticform-radiogrp-row {}    .mauticform-radiogrp-label { font-weight: normal; }    .mauticform-radiogrp-radio {}    .mauticform-button-wrapper .mauticform-button.btn-default { color: white; background-color: blue; border-color: blue; width:100%;}    .mauticform-button-wrapper .mauticform-button { display: inline-block;margin-bottom: 0;font-weight: 500;text-align: center;vertical-align: middle;cursor: pointer;background-image: none;border: 1px solid transparent;white-space: nowrap;padding: 6px 12px;font-size: 20px;line-height: 1.3856;border-radius: 3px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}    .mauticform-button-wrapper .mauticform-button.btn-default[disabled] { color: white; background-color: blue; border-color: blue; width: 100%;}            .mauticform-innerform{        border-radius: 20px;        border: 1px dashed #999;        padding: 30px 30px 20px;        background: rgba(255,74,179,.1);        text-align: left;    }    .mauticform_wrapper{        color: #fff;        font-size: 16px;        line-height: 26px    }    .mauticform-label{        font-size: 20px;        font-weight: 300;        color: #fff    }    .mauticform-selectbox, .mauticform-input, .mauticform-textarea{        font-size: 20px;        font-weight: 300;        color: #000;        padding: 12px 15px;        border-radius: 7px;    }    .mauticform-button-wrapper .mauticform-button.btn-default{        display:block;        width: 300px;        font-size: 24px;        background: #892b4d;        color: #fff;        border-radius: 100px;        padding: 10px 25px;        font-weight: 300;        margin: 15px auto;        border: 0    }    .mauticform-button-wrapper .mauticform-button.btn-default:hover{        background: #fff;        color: #000    }</style><style type="text/css" scoped="">    .mauticform-field-hidden { display:none }</style><div id="mauticform_wrapper_newsletterformen" class="mauticform_wrapper">    <form autocomplete="false" role="form" method="post" action="https://t.bitcci.ag/form/submit?formId=13" id="mauticform_newsletterformen" data-mautic-form="newsletterformen" enctype="multipart/form-data" target="mauticiframe_newsletterformen">        <div class="mauticform-error" id="mauticform_newsletterformen_error"></div>        <div class="mauticform-message" id="mauticform_newsletterformen_message"></div>        <div class="mauticform-innerform">                      <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">            <div id="mauticform_newsletterformen_ich_bin1" data-validate="ich_bin1" data-validation-type="checkboxgrp" class="mauticform-row mauticform-checkboxgrp mauticform-field-1 mauticform-required">                <label class="mauticform-label" for="mauticform_checkboxgrp_checkbox_ich_bin1_QueensEscortCamGirlClubModelContentcreator1">I am interested in the following news for</label>                <div class="mauticform-checkboxgrp-row">                    <input class="mauticform-checkboxgrp-checkbox" name="mauticform[ich_bin1][]" id="mauticform_checkboxgrp_checkbox_ich_bin1_Queen0" type="checkbox" value="Queen">                    <label id="mauticform_checkboxgrp_label_ich_bin1_Queen0" for="mauticform_checkboxgrp_checkbox_ich_bin1_Queen0" class="mauticform-checkboxgrp-label">Queens (Escort, Cam Girl, Club Model, Content creator...)</label>                </div>                <div class="mauticform-checkboxgrp-row">                    <input class="mauticform-checkboxgrp-checkbox" name="mauticform[ich_bin1][]" id="mauticform_checkboxgrp_checkbox_ich_bin1_Investor1" type="checkbox" value="Investor">                    <label id="mauticform_checkboxgrp_label_ich_bin1_Investor1" for="mauticform_checkboxgrp_checkbox_ich_bin1_Investor1" class="mauticform-checkboxgrp-label">Qualified Investors</label>                </div>                <div class="mauticform-checkboxgrp-row">                    <input class="mauticform-checkboxgrp-checkbox" name="mauticform[ich_bin1][]" id="mauticform_checkboxgrp_checkbox_ich_bin1_Kunde2" type="checkbox" value="Kunde">                    <label id="mauticform_checkboxgrp_label_ich_bin1_Kunde2" for="mauticform_checkboxgrp_checkbox_ich_bin1_Kunde2" class="mauticform-checkboxgrp-label">Clients</label>                </div>                <span class="mauticform-errormsg" style="display: none;">This is required.</span>            </div>            <div id="mauticform_newsletterformen_email_adresse" data-validate="email_adresse" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-2 mauticform-required">                <label id="mauticform_label_newsletterformen_email_adresse" for="mauticform_input_newsletterformen_email_adresse" class="mauticform-label">E-Mail Adress</label>                <input id="mauticform_input_newsletterformen_email_adresse" name="mauticform[email_adresse]" value="" class="mauticform-input" type="email">                <span class="mauticform-errormsg" style="display: none;">This is required.</span>            </div>                <input id="mauticform_input_newsletterformen_sprache" name="mauticform[sprache]" value="en" class="mauticform-hidden" type="hidden">            <div id="mauticform_newsletterformen_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-4">                <button type="submit" name="mauticform[submit]" id="mauticform_input_newsletterformen_submit" value="" class="mauticform-button btn btn-default">Get news</button>            </div>            </div>        </div>        <input type="hidden" name="mauticform[formId]" id="mauticform_newsletterformen_id" value="13">        <input type="hidden" name="mauticform[return]" id="mauticform_newsletterformen_return" value="">        <input type="hidden" name="mauticform[formName]" id="mauticform_newsletterformen_name" value="newsletterformen">        <input type="hidden" name="mauticform[messenger]" id="mauticform_newsletterformen_messenger" value="1"></form></div>
+</div>
+</div>
+</div>
+
+<div class="ftr-logo">
+<div class="inner">
+<div class="partner-logo"><img src="assets/images/cypto-mem.png" alt=""><img src="assets/images/cca_logo-trans.png" alt=""><img src="assets/images/cf-logo.png" alt=""></div>
+</div>
+</div>
+
+<footer>
+<div class="inner"><span><a href="https://bitcci.news" target="_blank"><img src="assets/images/logo.news.png" alt="bitcci.news"></a><a href="https://www.bitcci.blog" target="_blank">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="5898.42px" height="5898.42px" viewBox="0 0 5898.42 5898.42" xml:space="preserve" style="enable-background: new 0 0 5898.42 5898.42;">
+<defs></defs>
+<path id="Ellipse_1_copy_7_1_" d="M2949.21,5898.42C1320.4,5898.42,0,4578.01,0,2949.21S1320.4,0,2949.21,0
+  s2949.21,1320.4,2949.21,2949.21S4578.01,5898.42,2949.21,5898.42z M2950.34,2108.43c-335.56,0-637.7,129.6-906.43,388.79V1296.63
+  c0-47.9-19.3-85.87-57.56-114.07c-71.22-67.93-184.03-65.26-251.96,5.97c-0.33,0.35-0.66,0.69-0.99,1.04
+  c-32.34,27.39-48.65,63.03-48.65,107.06v2012.39c0,327.65,89.59,611.29,268.76,850.93c293.18,319.51,609.98,479.26,950.41,479.25
+  h73.29c180.8,0,368.11-48.9,561.94-146.71c449.55-272.22,674.33-645.52,674.32-1119.89c0.02-43.56-2.23-87.1-6.73-130.43
+  l-380.86,372.05c-5.26,23.33-11.25,47.93-17.98,73.81c-187.32,394.51-464.22,591.75-830.69,591.73h-56.19
+  c-84.71,0-180-15.49-285.86-46.46c-394.2-184.19-591.28-464.57-591.25-841.14v-46.46c0-88.03,18.73-186.65,56.19-295.87
+  c171.48-355.21,418.1-547.8,739.85-577.78l328.88-344.15C3096.74,2114.85,3023.61,2108.34,2950.34,2108.43L2950.34,2108.43z
+   M2930.12,2892.83c-11.72,11.72-18.3,27.62-18.3,44.19v473.39c0,34.52,27.98,62.5,62.5,62.5h473.36c16.58,0,32.47-6.59,44.19-18.31
+  l1037.71-1037.72l-179.2-179.2l2-1.8l-153.01-149.19l-231.54-231.56L2930.12,2892.83z M4056.21,1766.72l561.73,561.74l148.29-148.29
+  l-561.73-561.74L4056.21,1766.72z M4928.78,1455.91c-75-75.01-174.74-116.32-280.86-116.34h-0.03
+  c-106.09,0-205.83,41.33-280.84,116.36l-74.16,74.14l561.77,561.73l74.14-74.13c75.03-75.04,116.34-174.78,116.34-280.88
+  C5045.43,1631.38,5003.53,1530.24,4928.78,1455.91L4928.78,1455.91z M3189.54,3347.91l-152.72-152.74v-195.64l348.36,348.38H3189.54
+  L3189.54,3347.91z" class="st0"></path>
+</svg>
+</a><a href="https://twitter.com/bitcci" target="_blank">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="267.87px" height="267.88px" viewBox="0 0 267.87 267.88" xml:space="preserve" style="overflow: visible; enable-background: new 0 0 267.87 267.88;">
+<defs></defs>
+<g id="Ellipse_1_3_">
+ <g>
+ <path d="M133.94,0C59.97,0,0,59.97,0,133.94s59.97,133.94,133.94,133.94s133.94-59.97,133.94-133.94
+      S207.91,0,133.94,0z M192.83,103.53c0.09,1.31,0.09,2.61,0.09,3.92c0,39.86-30.34,85.78-85.78,85.78
+      c-17.08,0-32.95-4.95-46.3-13.53c2.43,0.28,4.76,0.37,7.28,0.37c14.09,0,27.07-4.76,37.43-12.88
+      c-13.25-0.28-24.36-8.96-28.19-20.91c1.87,0.28,3.73,0.47,5.69,0.47c2.71,0,5.41-0.37,7.93-1.03
+      c-13.81-2.8-24.17-14.93-24.17-29.59v-0.37c4.01,2.24,8.68,3.64,13.63,3.83c-8.12-5.41-13.44-14.65-13.44-25.11
+      c0-5.6,1.49-10.73,4.11-15.21c14.84,18.29,37.15,30.24,62.16,31.55c-0.47-2.24-0.75-4.57-0.75-6.91
+      c0-16.61,13.44-30.15,30.15-30.15c8.68,0,16.52,3.64,22.03,9.52c6.81-1.31,13.35-3.83,19.13-7.28c-2.24,7-7,12.88-13.25,16.61
+      c6.07-0.65,11.95-2.33,17.36-4.67C203.85,93.91,198.71,99.23,192.83,103.53z" class="st0"></path>
+ </g>
+</g>
+</svg>
+</a><a href="https://www.instagram.com/bitcci" target="_blank">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="267.88px" height="267.88px" viewBox="0 0 267.88 267.88" xml:space="preserve" style="overflow: visible; enable-background: new 0 0 267.88 267.88;">
+<defs></defs>
+<g id="Ellipse_1_copy_2_3_">
+ <g>
+ <path d="M134.4,109.59c-13.16,0-23.89,10.73-23.89,23.89c0,13.16,10.73,23.89,23.89,23.89
+      c13.16,0,23.89-10.73,23.89-23.89C158.3,120.33,147.56,109.59,134.4,109.59z M133.94,0C59.97,0,0,59.97,0,133.94
+      s59.97,133.94,133.94,133.94c73.97,0,133.94-59.97,133.94-133.94S207.91,0,133.94,0z M205.62,163.08
+      c-0.56,11.48-3.17,21.65-11.57,30.06c-8.4,8.4-18.57,11.01-30.05,11.57c-9.89,0.56-19.69,0.47-29.59,0.47s-19.69,0.09-29.59-0.47
+      c-11.48-0.56-21.65-3.17-30.06-11.57c-8.4-8.4-11.01-18.57-11.57-30.06c-0.56-9.89-0.47-19.69-0.47-29.59
+      c0-9.89-0.09-19.69,0.47-29.59c0.56-11.48,3.17-21.65,11.57-30.06c8.4-8.4,18.57-11.01,30.06-11.57
+      c9.89-0.56,19.69-0.47,29.59-0.47s19.69-0.09,29.59,0.47c11.48,0.56,21.65,3.17,30.05,11.57c8.4,8.4,11.01,18.57,11.57,30.06
+      c0.56,9.89,0.47,19.69,0.47,29.59C206.09,143.38,206.18,153.18,205.62,163.08z M190.31,91.21c-1.31-3.27-2.89-5.69-5.41-8.21
+      c-2.52-2.52-4.95-4.11-8.21-5.41c-9.43-3.73-31.83-2.89-42.28-2.89c-10.45,0-32.86-0.84-42.28,2.89
+      c-3.27,1.31-5.69,2.89-8.21,5.41c-2.52,2.52-4.11,4.95-5.41,8.21c-3.73,9.43-2.89,31.83-2.89,42.28c0,10.45-0.84,32.86,2.89,42.28
+      c1.31,3.27,2.89,5.69,5.41,8.21c2.52,2.52,4.95,4.11,8.21,5.41c9.43,3.73,31.83,2.89,42.28,2.89c10.45,0,32.86,0.84,42.28-2.89
+      c3.27-1.31,5.69-2.89,8.21-5.41c2.52-2.52,4.11-4.95,5.41-8.21c3.73-9.43,2.89-31.83,2.89-42.28
+      C193.21,123.04,194.05,100.63,190.31,91.21z M134.4,170.27c-20.35,0-36.78-16.43-36.78-36.78c0-20.35,16.43-36.78,36.78-36.78
+      c20.35,0,36.78,16.43,36.78,36.78C171.18,153.84,154.75,170.27,134.4,170.27z M172.67,103.81c-4.76,0-8.59-3.83-8.59-8.59
+      s3.83-8.59,8.59-8.59s8.59,3.83,8.59,8.59S177.43,103.81,172.67,103.81z" class="st0"></path>
+ </g>
+</g>
+</svg>
+</a><a href="https://t.me/bitcci" target="_blank"><i class="fa fa-telegram"></i></a>
+
+<!-- <a href="https://t.me/bitcciGroupOfficial" target="_blank" class="ng-tns-c166-0">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="508.44px" height="472.09px" viewBox="0 0 508.44 472.09" xml:space="preserve" class="ng-tns-c166-0" style="overflow: visible; enable-background: new 0 0 508.44 472.09;">
+<defs class="ng-tns-c166-0"></defs>
+<g class="ng-tns-c166-0">
+ <path d="M333.19,98.04C304.29,39.02,243.82,0,176,0c-97.04,0-176,78.5-176,175c0,26.22,5.63,51.36,16.74,74.79
+ L0.3,332.05c-2.09,10.47,7.14,19.73,17.62,17.66l83.28-16.46c11.21,5.32,22.81,9.36,34.73,12.15
+ C109.21,218.85,205.12,100.08,333.19,98.04z" class="st0 ng-tns-c166-0"></path>
+</g>
+<path d="M508.15,454.13l-16.45-82.26c2.87-6.06,5.37-12.24,7.51-18.51h-0.55c37.45-109.91-41.3-225.44-157.56-231.06
+ c0-0.01,0-0.01-0.01-0.02c-100.03-4.61-183.14,75.48-183.14,174.8c0,96.41,78.36,174.85,174.74,174.99
+ c26.14-0.03,51.2-5.66,74.57-16.75c91.2,18.03,84.09,16.75,86.19,16.75C502.92,472.07,510,463.39,508.15,454.13z M438.83,219.59
+ l-0.01,0.01l-36.98,173.26c-2.79,12.23-10.07,15.26-20.4,9.5l-56.33-41.25l-27.19,25.98c-3.01,2.99-5.52,5.48-11.32,5.48l4.05-57
+ l104.4-93.75c4.54-4.02-0.98-6.25-7.05-2.23l-129.07,80.76l-55.57-17.28c-12.09-3.75-12.31-12.02,2.52-17.77l217.34-83.21
+ C433.3,198.34,442.1,204.32,438.83,219.59z" class="st0 ng-tns-c166-0"></path>
+</svg>
+</a> -->
+
+<a href="https://www.youtube.com/c/bitcci/videos" target="_blank">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="267.88px" height="267.88px" viewBox="0 0 267.88 267.88" xml:space="preserve" style="overflow: visible; enable-background: new 0 0 267.88 267.88;">
+<defs></defs>
+<g id="Ellipse_1_copy_4_3_">
+ <g>
+ <path d="M133.94,0C59.97,0,0,59.97,0,133.94s59.97,133.94,133.94,133.94s133.94-59.97,133.94-133.94
+      S207.91,0,133.94,0z M204.47,162.38c-1.28,9.82-5.67,14.21-5.67,14.21c-5.43,5.67-11.57,5.67-14.36,5.99
+      c0,0-19.95,1.52-50.04,1.52c-37.19-0.32-48.6-1.44-48.6-1.44c-3.19-0.56-10.38-0.4-15.8-6.07c0,0-4.39-4.39-5.67-14.21
+      c-1.52-11.57-1.44-23.14-1.44-23.14v-10.85c0,0-0.08-11.57,1.44-23.14C65.61,95.34,70,91.03,70,91.03
+      c5.43-5.75,11.57-5.75,14.37-6.07c0,0,19.95-1.44,50.04-1.44s50.04,1.44,50.04,1.44c2.79,0.32,8.94,0.32,14.36,6.07
+      c0,0,4.39,4.31,5.67,14.21c1.52,11.57,1.44,23.14,1.44,23.14v10.85C205.91,139.24,205.99,150.81,204.47,162.38z M119.64,152.32
+      l38.63-19.95l-38.63-20.19V152.32z" class="st0"></path>
+ </g>
+</g>
+</svg>
+</a><a href="https://soundcloud.com/bitcci/bitcci-queen" target="_blank">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="267.88px" height="267.88px" viewBox="0 0 267.88 267.88" xml:space="preserve" style="overflow: visible; enable-background: new 0 0 267.88 267.88;">
+<defs></defs>
+<g id="Ellipse_1_copy_3_3_">
+ <g>
+ <path d="M133.94,0C59.97,0,0,59.97,0,133.94s59.97,133.94,133.94,133.94c73.97,0,133.94-59.97,133.94-133.94
+      S207.91,0,133.94,0z M45.26,162.62c-0.08,0.4-0.32,0.72-0.72,0.72c-0.4,0-0.64-0.32-0.72-0.72l-1.36-10.06l1.36-10.22
+      c0.08-0.4,0.32-0.72,0.72-0.72c0.4,0,0.64,0.32,0.72,0.72l1.6,10.22L45.26,162.62z M52.12,168.76c-0.08,0.4-0.4,0.72-0.8,0.72
+      c-0.4,0-0.72-0.32-0.72-0.8l-1.84-16.12c1.84-16.52,1.84-16.52,1.84-16.52c0-0.4,0.32-0.72,0.72-0.72c0.4,0,0.72,0.32,0.8,0.72
+      l2.08,16.52L52.12,168.76z M59.46,171.48c0,0.48-0.4,0.88-0.88,0.88s-0.88-0.4-0.96-0.88l-1.68-18.91l1.68-19.55
+      c0.08-0.56,0.48-0.96,0.96-0.96s0.88,0.4,0.88,0.96l2,19.55L59.46,171.48z M66.96,172.04c-0.08,0.64-0.56,1.04-1.12,1.04
+      c-0.56,0-1.04-0.4-1.04-1.04l-1.68-19.47l1.68-20.11c0-0.64,0.48-1.04,1.04-1.04c0.56,0,1.04,0.4,1.12,1.04l1.84,20.11
+      L66.96,172.04z M74.47,172.2c-0.08,0.72-0.64,1.28-1.28,1.28c-0.64,0-1.2-0.56-1.2-1.28l-1.6-19.63l1.6-18.67
+      c0-0.64,0.56-1.2,1.2-1.2c0.64,0,1.2,0.56,1.28,1.2l1.68,18.67L74.47,172.2z M81.97,172.2c0,0.8-0.64,1.44-1.36,1.44
+      c-0.8,0-1.36-0.64-1.44-1.44l-1.44-19.63c1.44-30.33,1.44-30.33,1.44-30.33c0.08-0.8,0.64-1.44,1.44-1.44
+      c0.72,0,1.36,0.64,1.36,1.44l1.68,30.33L81.97,172.2z M89.47,172.2c0,0.88-0.72,1.52-1.52,1.52c-0.88,0-1.52-0.64-1.6-1.52
+      l-1.28-19.47c1.28-37.35,1.28-37.35,1.28-37.35c0.08-0.88,0.72-1.52,1.6-1.52c0.8,0,1.52,0.64,1.52,1.52l1.52,37.35L89.47,172.2z
+       M97.29,171.88c-0.08,0.96-0.8,1.68-1.76,1.68c-0.88,0-1.6-0.72-1.68-1.68l-1.28-19.31l1.28-40.38c0-0.96,0.8-1.76,1.68-1.76
+      c0.96,0,1.68,0.8,1.76,1.76l1.44,40.38L97.29,171.88z M105.03,171.8c-0.08,1.04-0.88,1.84-1.92,1.84c-0.96,0-1.76-0.8-1.84-1.84
+      l-1.12-19.23l1.12-41.74c0-1.04,0.88-1.92,1.84-1.92c1.04,0,1.84,0.88,1.92,1.92l1.28,41.74L105.03,171.8z M112.77,171.64
+      c0,1.12-0.88,2-2,2c-1.12,0-1.92-0.88-2-2l-1.12-19.07l1.12-40.7c0-1.12,0.88-2,2-2c1.12,0,2,0.88,2,2l1.2,40.7L112.77,171.64z
+       M120.67,171.48c0,1.2-0.96,2.15-2.15,2.15c-1.2,0-2.15-0.96-2.23-2.15l-0.96-18.83l0.96-39.26c0.08-1.28,1.04-2.23,2.23-2.23
+      c1.2,0,2.07,0.96,2.15,2.23l1.12,39.26L120.67,171.48z M128.65,169.48l-0.08,1.92c0,0.64-0.24,1.2-0.72,1.6
+      c-0.4,0.4-0.96,0.72-1.6,0.72c-0.72,0-1.36-0.32-1.84-0.88c-0.32-0.4-0.48-0.88-0.48-1.36c0-0.08,0-0.08,0-0.08
+      c-0.88-18.75-0.88-18.83-0.88-18.83l0.8-46.21l0.08-0.48c0-0.8,0.4-1.52,1.04-1.92c0.4-0.24,0.8-0.4,1.28-0.4
+      c0.48,0,0.88,0.16,1.28,0.4c0.64,0.4,1.04,1.12,1.04,1.92l0.96,46.77L128.65,169.48z M136.48,171.08c0,1.36-1.12,2.47-2.47,2.47
+      c-1.36,0-2.47-1.12-2.55-2.47l-0.48-9.1l-0.48-9.34l0.96-50.76v-0.24c0.08-0.72,0.4-1.44,0.96-1.92c0.4-0.32,0.96-0.56,1.6-0.56
+      c0.4,0,0.88,0.16,1.2,0.4c0.72,0.4,1.2,1.2,1.28,2.07l1.12,51L136.48,171.08z M203.75,173.63c-62.65,0-62.73,0-62.73,0
+      c-1.36-0.16-2.47-1.2-2.47-2.63V99.25c0-1.36,0.48-2,2.23-2.63c4.39-1.76,9.34-2.71,14.45-2.71c20.83,0,37.91,15.96,39.74,36.31
+      c2.71-1.12,5.67-1.76,8.78-1.76c12.45,0,22.59,10.14,22.59,22.67C226.34,163.58,216.2,173.63,203.75,173.63z" class="st0"></path>
+ </g>
+</g>
+</svg>
+</a><a href="https://medium.com/@bitcci_AG" target="_blank">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="267.88px" height="267.88px" viewBox="0 0 267.88 267.88" xml:space="preserve" style="overflow: visible; enable-background: new 0 0 267.88 267.88;">
+<defs></defs>
+<g id="Ellipse_1_copy_5_3_">
+ <g>
+ <path d="M133.94,0C59.97,0,0,59.97,0,133.94s59.97,133.94,133.94,133.94s133.94-59.97,133.94-133.94 S207.91,0,133.94,0z M212.07,74.57L199.63,86.5c-1.07,0.82-1.6,2.16-1.38,3.49v87.66c-0.22,1.33,0.31,2.67,1.38,3.49l12.15,11.93 v2.62h-61.12v-2.62l12.59-12.22c1.24-1.24,1.24-1.6,1.24-3.49v-70.85l-35,88.89h-4.73L84,106.51v59.58 c-0.34,2.5,0.49,5.03,2.26,6.84l16.37,19.86v2.62H56.2v-2.62l16.37-19.86c1.75-1.81,2.53-4.35,2.11-6.84V97.2 c0.19-1.91-0.54-3.8-1.96-5.09L58.17,74.57v-2.62h45.19l34.93,76.6l30.71-76.6h43.08V74.57z" class="st0"></path>
+ </g>
+</g>
+</svg>
+</a><a href="https://www.facebook.com/bitcci" target="_blank">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="267.88px" height="267.88px" viewBox="0 0 267.88 267.88" xml:space="preserve" style="overflow: visible; enable-background: new 0 0 267.88 267.88;">
+<defs></defs>
+<g id="Ellipse_1_copy_3_">
+ <g>
+ <path d="M133.94,0C59.97,0,0,59.97,0,133.94s59.97,133.94,133.94,133.94s133.94-59.97,133.94-133.94 S207.91,0,133.94,0z M174.13,81.62h-14.65c-11.48,0-13.63,5.51-13.63,13.44v17.64h27.35l-3.64,27.63h-23.71v70.84h-28.56v-70.84 h-23.8V112.7h23.8V92.35c0-23.61,14.47-36.5,35.56-36.5c10.08,0,18.76,0.75,21.28,1.12V81.62z" class="st0"></path>
+ </g>
+</g>
+</svg>
+</a></span>
+<p> © 2022 - bitcci Group AG, Liechtenstein / bitcci AG, Switzerland <br>
+<a target="_blank" href="https://accounts.bitcci.com/Home/Imprint">Imprint</a> | <a target="_blank" href="https://accounts.bitcci.com/Home/DSGVO">Privacy policy</a></p>
+</div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.matchHeight.js"></script>
+<script type="text/javascript" src="assets/js/TimeCircles.js"></script>
+<script type="text/javascript" src="assets/js/general-clean.js?v=2"></script>
+<script>
+(function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+  w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+  m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://t.bitcci.ag/mtc.js','mt');
+
+mt('send', 'pageview');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2DR6YM9RRB"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-2DR6YM9RRB');
+</script>
+<!-- Global site tag (gtag.js) - Google Ads: 10903563997 -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-10903563997"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'AW-10903563997');
+</script>
+
+
+
+<iframe id="mauticiframe_newsletterformen" name="mauticiframe_newsletterformen" style="display: none; margin: 0px; padding: 0px; border: none; width: 0px;"></iframe></body></html>
